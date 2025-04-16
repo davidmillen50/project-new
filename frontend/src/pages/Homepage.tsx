@@ -1,24 +1,21 @@
 import React from 'react';
 import Card from '../components/Card/Card';
 import Details from '../components/Details/Details';
-import LinkSection from '../components/LinkSection/LinkSection';
 
-const Layout: React.FC<{}> = () => {
+
+const Homepage: React.FC<{}> = () => {
   return (
     <main>
       <div className="d-flex flex-column gap-5">
         <Card>
-          <Details title="Test Application" description="I made this with a view to learning React" />
+          <Details title="Homepage" description="I made this with a view to learning React" />
         </Card>
         <Card>
-          <LinkSection/>
-        </Card>
-        <Card>
-          <Details title="Why am I here" description="Why is anyone here? I don't know." />
+          <Details title="What is here?" description="Some poems some photos.  Maybe some other stuff." />
         </Card>
       </div>
     </main>
   );
 };
 
-export default Layout;
+export default Homepage;

@@ -8,7 +8,12 @@ interface Props {
 const Details: React.FC<Props> = ({ title, description }) => {
   return (<div>
     <h1>{title}</h1>
-    <p>{description}</p>
+    <p>{description.split(',').map((part, index) => (
+      <React.Fragment key={index}>
+        {part}
+        <br />
+      </React.Fragment>
+    ))}</p>
   </div>
   )
 };

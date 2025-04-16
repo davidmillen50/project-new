@@ -3,6 +3,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout/Layout'
 import Homepage from './pages/Homepage'
+import Poems from './pages/Poems'
+import Pictures from './pages/Pictures'
 import './styles/globals.css'
 import './App.css'
 
@@ -12,6 +14,8 @@ const App: React.FC = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/poems" element={<Poems />} />
+          <Route path="/pictures" element={<Pictures />} />
         </Routes>
       </Layout>
     </Router>
