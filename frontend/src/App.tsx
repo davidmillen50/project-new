@@ -1,15 +1,22 @@
-import { useState } from 'react'
-import Details from './components/details'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout/Layout'
+import Homepage from './pages/Homepage'
+import './styles/globals.css'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
-    <>
-      <Details description="This is a description" />
-    </>
-  )
-}
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+      </Layout>
+    </Router>
+  );
+};
+
 
 export default App

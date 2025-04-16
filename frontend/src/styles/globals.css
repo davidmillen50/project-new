@@ -1,0 +1,41 @@
+@import './variables.css';
+
+.container .card {
+  background-color: var(--color-rose);
+  color: var(--color-dark);
+  width: 700px;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-bg {
+  background-color: var(--color-bg);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-sand {
+  background-color: var(--color-sand);
+}
+
+.bg-champagne-pink {
+  background-color: var(--color-champagne-pink);
+}
+
+.bg-rose {
+  background-color: var(--color-rose);
+}
+
+.link:hover {
+  background-color: rgba(var(--color-light-bg), 0.5);
+  border: 1px solid var(--color-dark);
+  color: var(--color-dark);
+}
