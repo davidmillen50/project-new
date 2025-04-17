@@ -1,4 +1,13 @@
 {
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "$src/*": ["src/*"]
+    }
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },

@@ -1,5 +1,17 @@
 @import './variables.css';
 
+#root {
+  width: 1280px; /* Full width */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+  width: 1280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .container .card {
   background-color: var(--color-rose);
   color: var(--color-dark);
