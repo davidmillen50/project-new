@@ -1,0 +1,74 @@
+/* General Navbar Styles */
+.navbar {
+  background-color: var(--color-rose); /* Purple background */
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: black;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link Styles */
+.nav-link {
+  color: #000000; /* White text */
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Space between icon and text */
+  background-color: transparent;
+  border: 2px solid transparent;
+  font-size: 0.8rem;
+}
+
+/* Hover Effects */
+.nav-link:hover {
+  background-color: white; 
+  color: #6a0dad; /* Purple text on hover */
+  border-color: #ffffff; /* Add a border on hover */
+  transform: scale(1.1); /* Slightly enlarge the link */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Active Link Styles */
+.nav-item.active .nav-link {
+  background-color: var(--color-rose); 
+  color: #6a0dad;
+  border-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styles */
+.nav-link i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .nav-link {
+    width: 100%; /* Full width for smaller screens */
+    justify-content: flex-start;
+    padding: 0.5rem 1rem; /* More padding for touch targets */
+  }
+
+  .navbar-expand {
+    padding: 0.5rem 1rem;
+  }
+}

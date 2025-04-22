@@ -10,15 +10,15 @@ import './App.css'
 
 const App: React.FC = () => {
   return (
-    <div className="container w-50">
+    <div className="container-fluid col-12 col-md-6 col-lg-4">
       <Router>
-      <Layout>
-        <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/poems" element={<Poems />} />
-        <Route path="/pictures" element={<Pictures />} />
-        </Routes>
-      </Layout>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/poems" element={<Poems />} />
+            <Route path="/pictures" element={<Pictures />} />
+          </Routes>
+        </Layout>
       </Router>
     </div>
   );
