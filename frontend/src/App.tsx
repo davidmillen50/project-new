@@ -5,6 +5,7 @@ import Layout from './components/Layout/Layout'
 import Homepage from './pages/Homepage'
 import Poems from './pages/Poems'
 import Pictures from './pages/Pictures'
+import { pictures, poems } from './pages/content.ts'
 import './styles/globals.css'
 import './App.css'
 
@@ -15,8 +16,8 @@ const App: React.FC = () => {
         <Layout>
           <Routes>
             <Route path="/" element={<Homepage />} />
-            <Route path="/poems" element={<Poems />} />
-            <Route path="/pictures" element={<Pictures />} />
+            <Route path="/poems" element={<Poems props={poems} />} />
+            <Route path="/pictures" element={<Pictures props={pictures} />} />
           </Routes>
         </Layout>
       </Router>

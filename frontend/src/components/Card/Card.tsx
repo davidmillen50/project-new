@@ -6,9 +6,9 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({children}) => {
   return (
-    <div className="card">
+    <article className="card">
       {children}
-    </div>
+    </article>
   );
 };
 
