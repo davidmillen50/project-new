@@ -1,11 +1,12 @@
 import React from 'react';
-import './Navbar.css'; // Add the CSS styles here
+import './Navbar.css';
 
 const Navbar: React.FC = () => {
   const navItems = [
     { href: "/", icon: "bi-house", label: "Home" },
     { href: "/poems", icon: "bi-card-text", label: "Poems" },
     { href: "/pictures", icon: "bi-image", label: "Pictures" },
+    { href: "/tech-blog", icon: "bi-journal-text", label: "Tech Blog" },
   ];
 
   return (
@@ -14,9 +15,9 @@ const Navbar: React.FC = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             {navItems.map((item, index) => (
-              <li className="nav-item" key={index}>
+              <li className="px-2 nav-item" key={index}>
                 <a
-                  className="nav-link fw-bold d-flex justify-content-center align-items-baseline rounded border shadow-sm"
+                  className="nav-link fw-bold d-flex justify-content-center align-items-baseline rounded border border-dark shadow-sm"
                   href={item.href}
                 >
                   <i className={`bi ${item.icon} fs-5`} />

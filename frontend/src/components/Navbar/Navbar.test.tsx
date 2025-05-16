@@ -15,6 +15,7 @@ describe('Navbar Component', () => {
       { href: "/", label: "Home" },
       { href: "/poems", label: "Poems" },
       { href: "/pictures", label: "Pictures" },
+      { href: "/tech-blog", label: "Tech Blog" },
     ];
 
     navItems.forEach((item) => {

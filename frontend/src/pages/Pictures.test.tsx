@@ -14,9 +14,9 @@ describe('Pictures Component', () => {
     render(<Pictures props={pictures}/>);
 
     const images = [
-      { alt: "Close-up of a dragonfly", title: "A dragonfly", description: "This close-up captures the intricate details of a dragonfly's wings and body." },
-      { alt: "View of the sea with cliffs", title: "Cliffs and Sea", description: "A breathtaking view of the sea with rugged cliffs under a clear blue sky." },
-      { alt: "Shadow on grass", title: "Shadow on grass", description: "A shadow cast on lush green grass, evoking a sense of mystery and calm." },
+      { alt: "Close-up of a dragonfly (animation)", title: "A Dragonfly", description: "This close-up captures the intricate details of a dragonfly's wings and body." },
+      { alt: "View of the sea with cliffs (animation)", title: "Cliffs and Sea", description: "A breathtaking view of the sea with rugged cliffs under a clear blue sky." },
+      { alt: "Shadow on grass (animation)", title: "Shadow on grass", description: "A shadow cast on lush green grass, evoking a sense of mystery and calm." },
     ];
 
     images.forEach((image) => {
@@ -40,7 +40,7 @@ describe('Pictures Component', () => {
     render(<Pictures props={pictures}/>);
     const images = screen.getAllByRole('img');
     images.forEach((img) => {
-      expect(img).toHaveClass('img-fluid', 'rounded', 'border', 'border-white', 'shadow-sm');
+      expect(img).toHaveClass('img-fluid', 'rounded', 'border', 'border-white', 'shadow', 'animation');
     });
   });
 });
