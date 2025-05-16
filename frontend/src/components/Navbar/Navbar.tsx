@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css'; // Add the CSS styles here
 
-const Navbar: React.FC<{}> = () => {
+const Navbar: React.FC = () => {
   const navItems = [
     { href: "/", icon: "bi-house", label: "Home" },
     { href: "/poems", icon: "bi-card-text", label: "Poems" },

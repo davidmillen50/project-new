@@ -33,6 +33,16 @@ export default [
       ...jsxA11y.configs.recommended.rules,
       ...react.configs.flat.recommended.rules,
       ...tseslint.configs.recommended.rules,
+      "react/react-in-jsx-scope": "off",
+      "no-undef": "off",
+      "react/prop-types": "off",
+    },
+    settings: {
+      react: {
+        version: "detect",
+        pragma: "React",
+        fragment: "Fragment"
+      }
     },
   },
 ];

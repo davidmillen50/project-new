@@ -19,7 +19,7 @@ const links = [
   },
 ];
 
-const LinkSection: React.FC<{}> = () => {
+const LinkSection: React.FC = () => {
   return (
     <div className="d-flex flex-column gap-3">
       {links.map((link, index) => (
