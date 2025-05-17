@@ -12,7 +12,7 @@ import './App.css'
 
 const App: React.FC = () => {
   return (
-    <div className="container-fluid col-12 col-md-6 col-lg-4">
+    <div className="container-fluid col-12 col-lg-8 col-lg-4">
       <Router>
         <Layout>
           <Routes>

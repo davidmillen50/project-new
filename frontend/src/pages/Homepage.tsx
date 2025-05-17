@@ -5,7 +5,7 @@ import Details from '../components/Details/Details';
 const Homepage: React.FC = () => {
   return (
     <main>
-      <div className="d-flex flex-column gap-5">
+      <div className="d-flex flex-column gap-5 w-100">
         <Card>
           <Details title="Homepage" description="I made this with a view to learning React" />
         </Card>

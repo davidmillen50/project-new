@@ -26,22 +26,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem; /* Space between icon and text */
+  gap: 0.5rem;
   background-color: transparent;
   border: 2px solid transparent;
-  font-size: 0.8rem;
 }
 
-/* Hover Effects */
 .nav-link:hover {
   background-color: white; 
-  color: #6a0dad; /* Purple text on hover */
-  border-color: #ffffff; /* Add a border on hover */
-  transform: scale(1.1); /* Slightly enlarge the link */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  color: #6a0dad;
+  border-color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Active Link Styles */
 .nav-item.active .nav-link {
   background-color: var(--color-rose); 
   color: #6a0dad;
@@ -49,9 +46,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Icon Styles */
 .nav-link i {
-  font-size: 1.2rem;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -59,13 +54,12 @@
   .navbar {
     flex-direction: column;
     padding: 1rem;
-    font-size: 0.8rem;
   }
 
   .nav-link {
-    width: 100%; /* Full width for smaller screens */
+    width: 100%;
     justify-content: flex-start;
-    padding: 0.5rem 1rem; /* More padding for touch targets */
+    padding: 0.5rem 1rem;
   }
 
   .navbar-expand {

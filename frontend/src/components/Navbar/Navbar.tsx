@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <div className="d-flex justify-content-center align-items-center fixed-top p-1">
+    <div className="d-flex justify-content-center align-items-center fixed-top fixed-bottom p-1">
       <nav className="navbar navbar-expand navbar-light border border-dark rounded">
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
@@ -20,8 +20,8 @@ const Navbar: React.FC = () => {
                   className="nav-link fw-bold d-flex justify-content-center align-items-baseline rounded border border-dark shadow-sm"
                   href={item.href}
                 >
-                  <i className={`bi ${item.icon} fs-5`} />
-                  <span className="ms-2 align-items-middle">{item.label}</span>
+                  <i className={`bi ${item.icon} fs-1 fs-md-3`} />
+                  <span className="ms-2 align-self-center text-nowrap d-none d-md-inline">{item.label}</span>
                 </a>
               </li>
             ))}
