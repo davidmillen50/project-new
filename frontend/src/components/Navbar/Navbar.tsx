@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <div className="d-flex justify-content-center align-items-center fixed-top fixed-bottom p-1">
+    <div className="d-flex justify-content-center align-items-center fixed-top p-1">
       <nav className="navbar navbar-expand navbar-light border border-dark rounded">
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">

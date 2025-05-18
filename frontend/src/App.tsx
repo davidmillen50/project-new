@@ -6,7 +6,7 @@ import Homepage from './pages/Homepage'
 import Poems from './pages/Poems'
 import Pictures from './pages/Pictures'
 import TechBlog from './pages/TechBlog'
-import { pictures, poems } from './pages/content.ts'
+import { pictures, poems, techBlogs } from './pages/content.ts'
 import './styles/globals.css'
 import './App.css'
 
@@ -15,12 +15,14 @@ const App: React.FC = () => {
     <div className="container-fluid col-12 col-lg-8 col-lg-4">
       <Router>
         <Layout>
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/poems" element={<Poems props={poems} />} />
-            <Route path="/pictures" element={<Pictures props={pictures} />} />
-            <Route path="/tech-blog" element={<TechBlog />} />
-          </Routes>
+          <div className="mt-5">
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/poems" element={<Poems props={poems} />} />
+              <Route path="/pictures" element={<Pictures props={pictures} />} />
+              <Route path="/tech-blog" element={<TechBlog props={techBlogs} />} />
+            </Routes>
+          </div>
         </Layout>
       </Router>
     </div>
