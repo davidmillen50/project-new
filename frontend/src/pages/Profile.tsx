@@ -6,7 +6,7 @@ interface ProfileProps {
   props: ProfileInfo;
 }
 
-const TechBlog: React.FC<ProfileProps> = ({ props }) => {
+const Profile: React.FC<ProfileProps> = ({ props }) => {
   return (
     <main>
       <div className="d-flex flex-column gap-5">
@@ -37,4 +37,4 @@ const TechBlog: React.FC<ProfileProps> = ({ props }) => {
   );
 };
 
-export default TechBlog;
+export default Profile;
