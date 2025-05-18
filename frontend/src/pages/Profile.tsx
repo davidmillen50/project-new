@@ -13,12 +13,13 @@ const Profile: React.FC<ProfileProps> = ({ props }) => {
         <Card>
           <h1 className="typewriter">{props.name}</h1>
           <h2>{props.title}</h2>
-          <ul className="w-75 align-self-center fade-in-up">
-            <li>{props.summaryOne}</li>
-            <li>{props.summaryTwo}</li>
-            <li>{props.summaryThree}</li>
-            <li>{props.summaryFour}</li>
-          </ul>
+          <div className="w-75 align-self-center fade-in-up">
+            <p>{props.summaryOne}</p>
+            <p>{props.summaryTwo}</p>
+            <p>{props.summaryThree}</p>
+            <p>{props.summaryFour}</p>
+            <p>{props.summaryFive}</p>
+          </div>
           <h3>Technologies</h3>
           <h4>Languages</h4>
           <p className="text-center fade-in-up">{props.languages}</p>

@@ -1,17 +1,23 @@
 #root {
   max-width: 100%;
   margin: 0 auto;
-  padding: 5rem 2rem 2rem;
+  padding: 5rem 0.1rem 0.1rem;
   text-align: center;
   display: block;
+  @media (min-width: 768px) {
+    padding: 5rem 2rem 2rem;
+  }
 }
 
 .card {
-  padding: 2em;
+  padding: 0.5rem;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   background-color: var(--color-rose);
   color: var(--color-dark);
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
 }
 
 .image-animation {
@@ -94,10 +100,10 @@
     transform: matrix(1, 0, 0, 1, 0, 0); 
   }
   30% {
-    transform: matrix(1, -0.5, 0.5, 1, -0.5, 0.5); 
+    transform: matrix(0.75, -0.25, 0.25, 0.75, -0.25, 0.25); 
   }
   60% {
-    transform: matrix(1, 0.5, -0.5, 1, 0.5, -0.5);
+    transform: matrix(0.75, 0.25, -0.25, 0.75, 0.25, -0.25);
   }
   100% {
     transform: matrix(1, 0, 0, 1, 0, 0);

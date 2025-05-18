@@ -23,6 +23,7 @@ export type ProfileInfo = {
   summaryTwo: string;
   summaryThree: string;
   summaryFour: string;
+  summaryFive: string;
   languages: string;
   libraries: string;
   testingFrameworks: string;
