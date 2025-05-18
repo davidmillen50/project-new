@@ -6,7 +6,8 @@ import Homepage from './pages/Homepage'
 import Poems from './pages/Poems'
 import Pictures from './pages/Pictures'
 import TechBlog from './pages/TechBlog'
-import { pictures, poems, techBlogs } from './pages/content.ts'
+import Profile from './pages/Profile'
+import { pictures, poems, techBlogs, profileInfo } from './pages/content.ts'
 import './styles/globals.css'
 import './App.css'
 
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <div className="mt-5">
             <Routes>
               <Route path="/" element={<Homepage />} />
+              <Route path="/profile" element={<Profile props={profileInfo} />} />
               <Route path="/poems" element={<Poems props={poems} />} />
               <Route path="/pictures" element={<Pictures props={pictures} />} />
               <Route path="/tech-blog" element={<TechBlog props={techBlogs} />} />

@@ -21,3 +21,17 @@ export const techBlogs = [
   { title: "Hoisting", description: "Some info on hoisting", body: "Hoisting relates to the order variables and functions are loaded into memory.  For example, a function declaration (function someFunction() {})will be hoisted and can be accessed in code before the function is declared but a function expression (const something = anotherFunction() {}) is not hoisted and therefore is not accessible before it is defined." },
   { title: "Let vs Const vs Var", description: "Some info on variables", body: "Let is block scoped and can be reassigned. Const is block scoped and cannot be reassigned or redeclared. Var is function/globally scoped and can be reassigned or redeclared." },
 ];
+
+export const profileInfo = {
+  name: "David Millen",
+  title: "Software Engineer",
+  summaryOne: "Software Engineer with over 3 years experience developing production-ready event-driven features",
+  summaryTwo: "Motivated by working with stakeholders and in diverse teams to solve user problems and explore product opportunities.",
+  summaryThree: "Experience using Ruby on Rails, PostgreSQL, AWS and Svelte, Elm and Vue.js.",
+  summaryFour: "Focused on encouraging a knowledge sharing culture within teams.  Past experience with change management, finance systems and data analysis.",
+  languages: "Ruby, Elm, JavaScript (ES6+), TypeScript, SQL, Semantic HTML5, Responsive CSS3.",
+  libraries: "Svelte, Rails, Vue.js, ReactJS, Sinatra.",
+  testingFrameworks: "Vitest, Playwright, MiniTest, Capybara, Jest, React Testing Library, RSpec, Jasmine, Cypress.",
+  databases: "PostgreSQL.",
+  otherTechnologies: "Sidekiq, Elasticsearch, Kibana, GraphQL, Hasura"
+};

@@ -15,3 +15,17 @@ export type BlogPost = {
   description: string;
   body: string;
 }
+
+export type ProfileInfo = {
+  name: string;
+  title: string;
+  summaryOne: string;
+  summaryTwo: string;
+  summaryThree: string;
+  summaryFour: string;
+  languages: string;
+  libraries: string;
+  testingFrameworks: string;
+  databases: string;
+  otherTechnologies: string;
+}

@@ -13,7 +13,7 @@ const Pictures: React.FC<PicturesProps> = ({ props }) => {
       <div className="d-flex flex-column gap-5">
         {props.map((picture, index) => (
           <Card key={index}>
-            <img src={picture.src} alt={picture.alt} className="img-fluid rounded border border-white shadow animation" />
+            <img src={picture.src} alt={picture.alt} className="img-fluid rounded border border-white shadow image-animation" />
             <Details title={picture.title} description={picture.description} />
           </Card>
         ))}

@@ -7,7 +7,7 @@ interface BlogProps {
   props: BlogPost[];
 }
 
-const Poems: React.FC<BlogProps> = ({ props }) => {
+const TechBlog: React.FC<BlogProps> = ({ props }) => {
   return (
     <main>
       <div className="d-flex flex-column gap-5">
@@ -23,4 +23,4 @@ const Poems: React.FC<BlogProps> = ({ props }) => {
   );
 };
 
-export default Poems;
+export default TechBlog;

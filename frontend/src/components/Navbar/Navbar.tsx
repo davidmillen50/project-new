@@ -4,6 +4,7 @@ import './Navbar.css';
 const Navbar: React.FC = () => {
   const navItems = [
     { href: "/", icon: "bi-house", label: "Home" },
+    { href: "/profile", icon: "bi-person", label: "Profile" },
     { href: "/poems", icon: "bi-card-text", label: "Poems" },
     { href: "/pictures", icon: "bi-image", label: "Pictures" },
     { href: "/tech-blog", icon: "bi-journal-text", label: "Tech Blog" },

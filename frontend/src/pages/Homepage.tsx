@@ -7,10 +7,10 @@ const Homepage: React.FC = () => {
     <main>
       <div className="d-flex flex-column gap-5 w-100">
         <Card>
-          <Details title="Homepage" description="I made this with a view to learning React" />
+          <Details title="Homepage" description="I made this with TypeScript, React and Node Express" />
         </Card>
         <Card>
-          <Details title="What is here?" description="Some poems some photos.  Maybe some other stuff." />
+          <Details title="What is here?" description="My Profile and some other stuff" />
         </Card>
       </div>
     </main>
