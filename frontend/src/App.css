@@ -20,6 +20,10 @@
   }
 }
 
+article { 
+  height: 25.5rem;
+}
+
 .image-animation {
   animation-name: blur, moveAndBounce;
   animation-duration: 6s, 4s;

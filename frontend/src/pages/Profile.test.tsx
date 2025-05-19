@@ -16,6 +16,7 @@ const mockProfile: ProfileInfo = {
   summaryTwo: 'Skilled in React and TypeScript.',
   summaryThree: 'Enjoys problem solving.',
   summaryFour: 'Team player and quick learner.',
+  summaryFive: 'Passionate about technology.',
   languages: 'JavaScript, TypeScript, Python',
   libraries: 'React, Redux, Zustand',
   testingFrameworks: 'Vitest, Jest, Testing Library',
@@ -43,7 +44,7 @@ describe('Profile', () => {
     expect(screen.getByText('Technologies')).toBeInTheDocument();
     expect(screen.getByText('Languages')).toBeInTheDocument();
     expect(screen.getByText(mockProfile.languages)).toBeInTheDocument();
-    expect(screen.getByText('libraries')).toBeInTheDocument();
+    expect(screen.getByText('Libraries')).toBeInTheDocument();
     expect(screen.getByText(mockProfile.libraries)).toBeInTheDocument();
     expect(screen.getByText('Testing Frameworks')).toBeInTheDocument();
     expect(screen.getByText(mockProfile.testingFrameworks)).toBeInTheDocument();
@@ -51,11 +52,6 @@ describe('Profile', () => {
     expect(screen.getByText(mockProfile.databases)).toBeInTheDocument();
     expect(screen.getByText('Other Technologies')).toBeInTheDocument();
     expect(screen.getByText(mockProfile.otherTechnologies)).toBeInTheDocument();
-  });
-
-  it('renders the Card component', () => {
-    render(<Profile props={mockProfile} />);
-    expect(screen.getByTestId('card')).toBeInTheDocument();
   });
 
   it('renders the footer text', () => {

@@ -40,7 +40,7 @@ describe('Pictures Component', () => {
     render(<Pictures props={pictures}/>);
     const images = screen.getAllByRole('img');
     images.forEach((img) => {
-      expect(img).toHaveClass('img-fluid', 'rounded', 'border', 'border-white', 'shadow', 'animation');
+      expect(img).toHaveClass('img-fluid', 'rounded', 'border', 'border-white', 'shadow', 'image-animation');
     });
   });
 });

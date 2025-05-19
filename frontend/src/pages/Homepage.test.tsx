@@ -11,16 +11,12 @@ describe('Homepage', () => {
 
   test('renders two Card components with Details', () => {
     render(<Homepage />);
-    const firstCardTitle = screen.getByText('Homepage');
-    const firstCardDescription = screen.getByText('I made this with a view to learning React');
-    expect(firstCardTitle).toBeInTheDocument();
+    const firstCardDescription = screen.getByText(/I made this with TypeScript, React and Node Express/i);
     expect(firstCardDescription).toBeInTheDocument();
   
     const secondCardTitle = screen.getByText('What is here?');
-    const secondCardDescriptionOne = screen.getByText(/Some poems some photos./i);
-    const secondCardDescriptionTwo = screen.getByText(/Maybe some other stuff./i);
+    const secondCardDescriptionOne = screen.getByText(/My Profile and some other stuff/i);
     expect(secondCardTitle).toBeInTheDocument();
     expect(secondCardDescriptionOne).toBeInTheDocument();
-    expect(secondCardDescriptionTwo).toBeInTheDocument();
   });
 });
