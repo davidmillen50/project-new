@@ -13,8 +13,6 @@ describe('Navbar Component', () => {
     render(<Navbar />);
     const navItems = [
       { href: "/", label: "Home" },
-      { href: "/poems", label: "Poems" },
-      { href: "/pictures", label: "Pictures" },
       { href: "/tech-blog", label: "Tech Blog" },
     ];
 
@@ -22,16 +20,6 @@ describe('Navbar Component', () => {
       const linkElement = screen.getByRole('link', { name: item.label });
       expect(linkElement).toBeInTheDocument();
       expect(linkElement).toHaveAttribute('href', item.href);
-    });
-  });
-
-  test('renders icons for each navigation item', () => {
-    render(<Navbar />);
-    const icons = ['bi-house', 'bi-card-text', 'bi-image'];
-
-    icons.forEach((icon) => {
-      const iconElement = document.querySelector(`.${icon}`);
-      expect(iconElement).toBeInTheDocument();
     });
   });
 });

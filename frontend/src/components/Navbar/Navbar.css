@@ -1,8 +1,7 @@
 /* General Navbar Styles */
 .navbar {
-  background-color: var(--color-rose); /* Purple background */
   padding: 0.5rem 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: black;
 }
 
@@ -15,9 +14,9 @@
   padding: 0;
 }
 
-/* Link Styles */
 .nav-link {
-  color: #000000; /* White text */
+  font-size: 1.5rem;
+  color: #000000;
   font-weight: bold;
   text-decoration: none;
   padding: 0.5rem 0.5rem;
@@ -32,18 +31,9 @@
 }
 
 .nav-link:hover {
-  background-color: white; 
-  color: #6a0dad;
-  border-color: #ffffff;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.nav-item.active .nav-link {
-  background-color: var(--color-rose); 
-  color: #6a0dad;
-  border-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 0px #000000, 0 0 0px #000000;
+  color: blue;
+  text-decoration: underline;
 }
 
 .nav-link i {

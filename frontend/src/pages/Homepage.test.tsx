@@ -11,12 +11,10 @@ describe('Homepage', () => {
 
   test('renders two Card components with Details', () => {
     render(<Homepage />);
-    const firstCardDescription = screen.getByText(/I made this with TypeScript, React and Node Express/i);
+    const firstCardDescription = screen.getByText(/Welcome to my portfolio site/i);
     expect(firstCardDescription).toBeInTheDocument();
-  
-    const secondCardTitle = screen.getByText('What is here?');
-    const secondCardDescriptionOne = screen.getByText(/My Profile and some other stuff/i);
-    expect(secondCardTitle).toBeInTheDocument();
+
+    const secondCardDescriptionOne = screen.getByText(/I am a software engineer with over 3 years experience./i);
     expect(secondCardDescriptionOne).toBeInTheDocument();
   });
 });

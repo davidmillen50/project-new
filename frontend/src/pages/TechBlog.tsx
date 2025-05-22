@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from '../components/Card/Card';
 import Details from '../components/Details/Details';
 import type { BlogPost } from './types';
 
@@ -12,10 +11,10 @@ const TechBlog: React.FC<BlogProps> = ({ props }) => {
     <main>
       <div className="d-flex flex-column gap-5">
         {props.map((post, index) => (
-          <Card key={index}>
+          <div className="p-3 text-dark" key={index}>
             <Details title={post.title} description={post.description} />
-            <p className="text-center">{post.body}</p>
-          </Card>
+            <p className="w-50 mx-auto">{post.body}</p>
+          </div>
         ))}
         David Millen 2025
       </div>

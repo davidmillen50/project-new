@@ -1,17 +1,28 @@
 import React from 'react';
-import Card from '../components/Card/Card';
+
+const sections = [
+  { id: 1, bg: 'https://i.imgur.com/1I5YNzc.jpeg', content: 'Welcome to my portfolio site.' },
+  { id: 2, bg: 'https://i.imgur.com/u6So3K0.jpeg', content: 'Made with React and TypeScript.' },
+  { id: 3, bg: 'https://i.imgur.com/IIbXlkC.jpeg', content: "I am a software engineer with over 3 years experience." },
+]
 
 const Homepage: React.FC = () => {
   return (
     <main>
-      <div className="d-flex flex-column gap-5 w-100 homepage-animation">
-        <Card>
-          <p> I made this with TypeScript, React and Node Express </p>
-        </Card>
-        <Card>
-           <h2>What is here?</h2>
-           <p> My Profile and some other stuff </p>
-        </Card>
+      <div className="d-flex flex-column gap-5 p-0 m-0">
+        {sections.map((section) => (
+          <div key={section.id}>
+            <div
+              key={section.id}
+              className="section"
+              style={{
+                backgroundImage: `url('${section.bg}')`
+              }}
+            >
+            </div>
+            <h1 className={`m-0 p-2 text-dark d-flex ${section.id === 2 ? 'justify-content-start' : 'justify-content-end'}`}>{section.content}</h1>
+          </div>
+        ))}
       </div>
     </main>
   );

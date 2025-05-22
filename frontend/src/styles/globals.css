@@ -16,7 +16,6 @@
 }
 
 .container .card {
-  background-color: var(--color-rose);
   color: var(--color-dark);
   width: auto;
   border: 1px solid var(--color-dark);

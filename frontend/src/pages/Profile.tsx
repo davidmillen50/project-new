@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from '../components/Card/Card';
 import type { ProfileInfo } from './types';
 
 interface ProfileProps {
@@ -10,20 +9,20 @@ const Profile: React.FC<ProfileProps> = ({ props }) => {
   return (
     <main>
       <div className="d-flex flex-column gap-5">
-        <Card>
+        <div className="text-dark">
           <h1 className="typewriter">{props.name}</h1>
-        </Card>
-        <Card>
+        </div>
+        <div className="text-dark">
           <h2>{props.title}</h2>
-          <div className="w-75 align-self-center fade-in-up">
+          <div className="align-self-center fade-in-up">
             <p>{props.summaryOne}</p>
             <p>{props.summaryTwo}</p>
             <p>{props.summaryThree}</p>
             <p>{props.summaryFour}</p>
             <p>{props.summaryFive}</p>
           </div>
-        </Card>
-        <Card>
+        </div>
+        <div className="text-dark">
           <h3>Technologies</h3>
           <table className="border table">
             <thead>
@@ -45,7 +44,7 @@ const Profile: React.FC<ProfileProps> = ({ props }) => {
               </tr>
             </tbody>
           </table>
-        </Card>
+        </div>
         David Millen 2025
       </div>
     </main>
